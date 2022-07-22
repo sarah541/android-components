@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- The default document title of an error page (i.e., the contents of the `<title>` tag). -->
-    <string name="mozac_browser_errorpages_page_title">Мушкилии боркунии саҳифа</string>
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:moz="http://mozac.org/tools">
 
     <!-- The button that appears at the bottom of an error page. -->
     <string name="mozac_browser_errorpages_page_refresh">Аз нав кӯшиш кардан</string>
-
-    <!-- The button that appears at the bottom of an error page. -->
-    <string name="mozac_browser_errorpages_page_go_back">Бозгашт</string>
 
     <!-- The document title and heading of an error page shown when a website cannot be loaded for an unknown reason. -->
     <string name="mozac_browser_errorpages_generic_title">Дархостро ба анҷом расонида наметавонад</string>
@@ -51,6 +46,31 @@
     <!-- The text shown inside the advanced options button used to bypass the invalid SSL certificate. It's only shown if the user has expanded the advanced options. -->
     <string name="mozac_browser_errorpages_security_bad_cert_accept_temporary">Таваккалро қабул кунед ва идома диҳед</string>
 
+    <!-- The document title and heading of the error page shown when a website uses HSTS. -->
+    <string name="mozac_browser_errorpages_security_bad_hsts_cert_title">Ин сомона пайвасти бехатареро талаб мекунад.</string>
+    <!-- The error message shown when a website uses HSTS. -->
+    <string name="mozac_browser_errorpages_security_bad_hsts_cert_message"><![CDATA[
+      <ul>
+         <li>Саҳифае, ки шумо мехоҳед аз назар гузаронед, намоиш дода намешавад, зеро ки ин сомона пайвасти бехатареро талаб мекунад.</li>
+         <li>Чунин менамояд, ки сомона дорои мушкилие мебошад, ки шумо онро мустақилона ҳал карда наметавонед.</li>
+         <li>Шумо метавонед дар бораи ин мушкилӣ ба маъмури сомона хабар диҳед.</li>
+      </ul>
+    ]]></string>
+
+    <!-- The text shown inside the advanced button used to expand the advanced options. It's only shown when a website uses HSTS. -->
+    <string name="mozac_browser_errorpages_security_bad_hsts_cert_advanced">Иловагӣ…</string>
+
+    <!-- The advanced certificate information shown when a website uses HSTS. The %1$s will be replaced by the website URL and %2$s will be replaced by the app name. It's only shown when a website uses HSTS. -->
+    <string moz:removedIn="104" name="mozac_browser_errorpages_security_bad_hsts_cert_techInfo" tools:ignore="UnusedResources"><![CDATA[
+        <label> <b>%1$s</b> дорои сиёсати амниятӣ бо номи «Амнияти интиқоли қатъии HTTP» (HSTS) мебошад, ва ин маънои онро дорад, ки <b>%2$s</b> метавонад ба он танҳо тавассути алоқаи бехатар пайваст шавад. Шумо барои ворид шудан ба ин сомона истисноро илова карда наметавонед.
+    ]]></string>
+    <!-- The advanced certificate information shown when a website uses HSTS. The %1$s will be replaced by the website URL and %2$s will be replaced by the app name. It's only shown when a website uses HSTS. -->
+    <string name="mozac_browser_errorpages_security_bad_hsts_cert_techInfo2"><![CDATA[
+        <label> <b>%1$s</b> дорои сиёсати амниятӣ бо номи «Амнияти интиқоли қатъии HTTP» (HSTS) мебошад, ва ин маънои онро дорад, ки <b>%2$s</b> метавонад ба он танҳо тавассути алоқаи бехатар пайваст шавад. Шумо барои ворид шудан ба ин сомона истисноро илова карда наметавонед. </label>
+    ]]></string>
+    <!-- The text shown inside the advanced options button used to go back. It's only shown if the user has expanded the advanced options. -->
+    <string name="mozac_browser_errorpages_security_bad_hsts_cert_back">Бозгашт</string>
+
     <!-- The document title and heading of the error page shown when the user's network connection is interrupted while connecting to a website. -->
     <string name="mozac_browser_errorpages_net_interrupt_title">Пайвастшавӣ қатъ карда шуд</string>
 
@@ -73,7 +93,7 @@
         <li>Эҳтимол сервер бо дархостҳои зиёд машғул аст ё ин ки муваққатан дастнорас аст? Баъдтар аз нав кӯшиш кунед.</li>
         <li>Шумо метавонед, ки сомонаҳои дигарро бинед? Пайвасти шабакавии дастгоҳро санҷед.</li>
         <li>Дастгоҳ ё шабакаи шумо бо девори оташ ё прокси муҳофизат шудааст? Танзимоти нодуруст метавонад ба дидани сомона халал расонад.</li>
-        <li>Ҳанӯз мушкилӣ мекашед? Барои кумак ба маъмури шабака ё провайдери интернети худ муроҷиат намоед.</li>
+        <li>Ҳоло ҳам мушкилӣ мекашед? Барои кумак ба маъмури шабака ё провайдери интернети худ муроҷиат намоед.</li>
       </ul>
     ]]></string>
 
@@ -101,9 +121,9 @@
 
     <!-- The error message shown when the browser gets stuck in an infinite loop when loading a website. -->
     <string name="mozac_browser_errorpages_redirect_loop_message"><![CDATA[
-      <p> Браузер кӯшиши ҷустуҷӯи маводи дархостшударо қатъ кард. Сомона дархостро тавре равон мекунад, ки ҳеҷ гоҳ ба анҷом нарасад. </p>
+      <p> Браузер кӯшиши ҷустуҷӯи маводи дархостшударо қатъ кард. Сомона дархостро тавре равона мекунад, ки раванд ҳеҷ гоҳ ба анҷом намерасад. </p>
       <ul>
-        <li> Оё шумо кукиҳоеро, ки ин сомона талаб мекунад, ғайрифаъол кардед ё бастед? </li>
+        <li> Шумо кукиҳоеро, ки ин сомона талаб мекунад, ғайрифаъол кардед ё бастед? </li>
         <li> Агар қабули кукиҳои сомона мушкилиро ҳал накунад, ин эҳтимолан мушкилии танзимоти сервер мебошад, на дастгоҳи шумо. </li>
       </ul>
     ]]></string>
@@ -125,7 +145,7 @@
 
     <!-- The error message shown when the browser prevents loading a website on a restricted port. -->
     <string name="mozac_browser_errorpages_port_blocked_message"><![CDATA[
-      <p>Нишонии дархостшуда портеро муайян кард (масалан, <q>mozilla.org:80</q> барои порти 80 дар mozilla.org). Одатан, порт барои мақсадҳои <em>ғайр аз</em> тамошокунии сомонаҳо истифода мешавад. Браузер барои муҳофизат ва амнияти шумо дархостро бекор кард.</p>
+      <p>Нишонии дархостшуда портеро муайян кард (масалан, <q>mozilla.org:80</q> барои порти 80 дар mozilla.org), ки одатан барои мақсадҳои <em>ба ғайр аз</em> тамошокунии сомонаҳо истифода мешавад. Браузер барои муҳофизат ва амнияти шумо дархостро бекор кард.</p>
     ]]></string>
 
     <!-- The document title and heading of the error page shown when the Internet connection is disrupted while loading a website. -->
@@ -146,7 +166,7 @@
     <!-- The error message shown when the browser refuses to load a type of file that is considered unsafe. -->
     <string name="mozac_browser_errorpages_unsafe_content_type_message"><![CDATA[
       <ul>
-        <li>Лутфан, бо соҳибони сомона дар тамос шавед ва дар бораи ин мушкилӣ ба онҳо хабар расонед.</li>
+        <li>Лутфан, бо соҳибони сомона дар тамос шавед ва дар бораи ин мушкилӣ ба онҳо хабар диҳед.</li>
       </ul>
     ]]></string>
 
@@ -236,8 +256,8 @@
     <string name="mozac_browser_errorpages_file_not_found_message"><![CDATA[
       <ul>
         <li> Эҳтимол аст, ки номи мавод иваз карда шуд, ё ин ки мавод тоза карда шуд, ё ба ҷойи дигар гузошта шуд? </li>
-        <li> Оё дар нишонӣ хатои имлоӣ, ҳуруфчинӣ ё дигар хатои типографӣ вуҷуд дорад? </li>
-        <li> Оё шумо ба маводи дархостшуда иҷозати дастрасии кофӣ доред? </li>
+        <li> Дар нишонӣ ягон хатои имлоӣ, ҳуруфчинӣ ё дигар хатои типографӣ вуҷуд дорад? </li>
+        <li> Шумо ба маводи дархостшуда иҷозати дастрасии кофӣ доред? </li>
       </ul>
     ]]></string>
 
@@ -246,7 +266,7 @@
 
     <string name="mozac_browser_errorpages_file_access_denied_message"><![CDATA[
       <ul>
-        <li>Эҳтимол, он тоза карда шудааст, ба ҷойи дигар интиқол дода шудааст ё иҷозатномаҳои файл дастрасиро манъ мекунанд.</li>
+        <li>Эҳтимол, он тоза карда шудааст, ба ҷойи дигар интиқол дода шудааст ё иҷозатҳои файл дастрасиро манъ мекунанд.</li>
       </ul>
     ]]></string>
 
@@ -256,9 +276,9 @@
     <string name="mozac_browser_errorpages_proxy_connection_refused_message"><![CDATA[
       <p>Браузер барои истифодаи сервери прокси танзим карда шудааст, аммо прокси аз пайвастшавӣ даст кашид.</p>
       <ul>
-        <li>Оё танзимоти прокси дар браузер дуруст аст? Танзимотро санҷед ва аз нав кӯшиш кунед.</li>
-        <li>Оё хидмати прокси барои пайвастшавӣ аз ин шабака иҷозат медиҳад?</li>
-        <li>Ҳанӯз мушкилӣ мекашед? Барои кумак ба маъмури шабака ё провайдери интернети худ муроҷиат кунед.</li>
+        <li>Танзимоти прокси дар браузер дуруст аст? Танзимотро санҷед ва аз нав кӯшиш кунед.</li>
+        <li>Хидмати прокси барои пайвастшавӣ аз ин шабака иҷозат медиҳад?</li>
+        <li>Ҳоло ҳам мушкилӣ мекашед? Барои кумак ба маъмури шабака ё провайдери интернети худ муроҷиат кунед.</li>
       </ul>
     ]]></string>
 
@@ -268,9 +288,9 @@
     <string name="mozac_browser_errorpages_unknown_proxy_host_message"><![CDATA[
       <p>Браузер барои истифодаи сервери прокси танзим карда шудааст, аммо прокси ёфт нашуд.</p>
       <ul>
-        <li>Оё танзимоти прокси дар браузер дуруст аст? Танзимотро санҷед ва аз нав кӯшиш кунед.</li>
-        <li>Оё дастгоҳ ба шабакаи фаъол пайваст аст?</li>
-        <li>Ҳанӯз мушкилӣ мекашед? Барои кумак ба маъмури шабака ё провайдери интернети худ муроҷиат кунед.</li>
+        <li>Танзимоти прокси дар браузер дуруст аст? Танзимотро санҷед ва аз нав кӯшиш кунед.</li>
+        <li>Дастгоҳ ба шабакаи фаъол пайваст аст?</li>
+        <li>Ҳоло ҳам мушкилӣ мекашед? Барои кумак ба маъмури шабака ё провайдери интернети худ муроҷиат кунед.</li>
       </ul>
     ]]></string>
 
@@ -304,4 +324,11 @@
     <string name="mozac_browser_errorpages_safe_phishing_uri_message"><![CDATA[
       <p>Ин саҳифаи сомона дар %1$s ҳамчун сомонаи қалбакӣ гузориш дода шудааст ва дар асоси бартариҳои амниятии шумо баста шудааст.</p>
     ]]></string>
+
+    <!-- The title of the error page for websites that do not support HTTPS when HTTPS-Only is turned on -->
+    <string name="mozac_browser_errorpages_httpsonly_title">Сомонаи бехатар дастрас нест</string>
+    <!-- The text of the error page for websites that do not support HTTPS when HTTPS-Only is turned on. %1$s will be replaced with the URL of the website. -->
+    <string name="mozac_browser_errorpages_httpsonly_message"><![CDATA[Шумо барои амнияти такмилёфта реҷаи «Танҳо-HTTPS»-ро фаъол кардед, аммо версияи HTTPS барои сомонаи <em>%1$s</em> дастрас нест.]]></string>
+    <!-- Button on error page for websites that do not support HTTPS when HTTPS-Only is turned on. Clicking the button allows the user to nevertheless load the website using HTTP. -->
+    <string name="mozac_browser_errorpages_httpsonly_button">Ба сомонаи HTTP идома диҳед</string>
 </resources>
