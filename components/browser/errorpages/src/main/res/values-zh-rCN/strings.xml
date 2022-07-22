@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- The default document title of an error page (i.e., the contents of the `<title>` tag). -->
-    <string name="mozac_browser_errorpages_page_title">页面载入出错</string>
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:moz="http://mozac.org/tools">
 
     <!-- The button that appears at the bottom of an error page. -->
     <string name="mozac_browser_errorpages_page_refresh">重试</string>
-
-    <!-- The button that appears at the bottom of an error page. -->
-    <string name="mozac_browser_errorpages_page_go_back">后退</string>
 
     <!-- The document title and heading of an error page shown when a website cannot be loaded for an unknown reason. -->
     <string name="mozac_browser_errorpages_generic_title">无法完成请求</string>
@@ -48,6 +43,32 @@
     <string name="mozac_browser_errorpages_security_bad_cert_back">返回上一页（推荐）</string>
     <!-- The text shown inside the advanced options button used to bypass the invalid SSL certificate. It's only shown if the user has expanded the advanced options. -->
     <string name="mozac_browser_errorpages_security_bad_cert_accept_temporary">接受风险并继续</string>
+
+    <!-- The document title and heading of the error page shown when a website uses HSTS. -->
+    <string name="mozac_browser_errorpages_security_bad_hsts_cert_title">此网站要求使用安全连接。</string>
+
+    <!-- The error message shown when a website uses HSTS. -->
+    <string name="mozac_browser_errorpages_security_bad_hsts_cert_message"><![CDATA[
+      <ul>
+         <li>由于此网站要求使用安全连接，您尝试查看的页面无法显示。</li>
+         <li>这个问题大多与网站有关，无法通过您的操作解决。</li>
+         <li>您可以向此网站的管理者反馈该问题。</li>
+      </ul>
+    ]]></string>
+
+    <!-- The text shown inside the advanced button used to expand the advanced options. It's only shown when a website uses HSTS. -->
+    <string name="mozac_browser_errorpages_security_bad_hsts_cert_advanced">高级…</string>
+
+    <!-- The advanced certificate information shown when a website uses HSTS. The %1$s will be replaced by the website URL and %2$s will be replaced by the app name. It's only shown when a website uses HSTS. -->
+    <string moz:removedIn="104" name="mozac_browser_errorpages_security_bad_hsts_cert_techInfo" tools:ignore="UnusedResources"><![CDATA[
+        <label> <b>%1$s</b> 启用了被称为 HTTP 严格传输安全（HSTS）的安全策略，<b>%2$s</b> 只能与其建立安全连接。您无法为此网站添加例外，以访问此网站。
+    ]]></string>
+    <!-- The advanced certificate information shown when a website uses HSTS. The %1$s will be replaced by the website URL and %2$s will be replaced by the app name. It's only shown when a website uses HSTS. -->
+    <string name="mozac_browser_errorpages_security_bad_hsts_cert_techInfo2"><![CDATA[
+        <label> <b>%1$s</b> 启用了被称为 HTTP 严格传输安全（HSTS）的安全策略，<b>%2$s</b> 只能与其建立安全连接。您无法为此网站添加例外，以访问此网站。</label>
+    ]]></string>
+    <!-- The text shown inside the advanced options button used to go back. It's only shown if the user has expanded the advanced options. -->
+    <string name="mozac_browser_errorpages_security_bad_hsts_cert_back">返回</string>
 
     <!-- The document title and heading of the error page shown when the user's network connection is interrupted while connecting to a website. -->
     <string name="mozac_browser_errorpages_net_interrupt_title">连接被中断</string>
@@ -281,4 +302,10 @@
       <p>根据举报，位于 %1$s 的此网站为欺诈网站。现已根据您的安全选项予以拦截。</p>
     ]]></string>
 
-    </resources>
+    <!-- The title of the error page for websites that do not support HTTPS when HTTPS-Only is turned on -->
+    <string name="mozac_browser_errorpages_httpsonly_title">安全网站不可用</string>
+    <!-- The text of the error page for websites that do not support HTTPS when HTTPS-Only is turned on. %1$s will be replaced with the URL of the website. -->
+    <string name="mozac_browser_errorpages_httpsonly_message"><![CDATA[为增强安全性，您已启用 HTTPS-Only 模式，但 <em>%1$s</em> 的 HTTPS 版本不可用。]]></string>
+    <!-- Button on error page for websites that do not support HTTPS when HTTPS-Only is turned on. Clicking the button allows the user to nevertheless load the website using HTTP. -->
+    <string name="mozac_browser_errorpages_httpsonly_button">继续前往 HTTP 网站</string>
+</resources>
