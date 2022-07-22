@@ -77,7 +77,7 @@
     <!-- A link where users can find more information about add-ons permissions. -->
     <string name="mozac_feature_addons_learn_more">ᱪᱷᱟᱹᱲ ᱵᱟᱵᱚᱛ ᱡᱟᱹᱥᱛᱤ ᱵᱟᱰᱟᱭ ᱢᱮ</string>
     <!-- The rating of the add-on. -->
-    <string name="mozac_feature_addons_rating">ᱫᱚᱨ ᱴᱷᱟᱣᱠᱟ</string>
+    <string name="mozac_feature_addons_rating">ᱫᱚᱨ ᱴᱷᱟᱹᱣᱠᱟᱹ</string>
     <!-- The settings of the add-on. -->
     <string name="mozac_feature_addons_settings">ᱥᱟᱡᱟᱣ ᱠᱚ</string>
     <!-- Indicates the add-on is enabled. -->
@@ -157,7 +157,7 @@
     <!-- This is the caption for not yet supported screen caption -->
     <string name="mozac_feature_addons_not_yet_supported_caption2">ᱟᱞᱮ ᱫᱚ ᱱᱤᱛᱚᱜ ᱮᱛᱦᱚᱵ ᱫᱚᱭᱚᱱ ᱠᱚ ᱨᱮᱭᱟᱜ ᱢᱮᱚᱠ ᱯᱟᱥᱱᱟᱣ ᱠᱚ ᱞᱟᱹᱜᱤᱫ ᱥᱟᱹᱯᱯᱚᱴ ᱞᱮ ᱛᱚᱭᱟᱨ ᱮᱜᱼᱟ ᱾</string>
     <!-- This is the caption for the add-on installation progress overlay -->
-    <string name="mozac_add_on_install_progress_caption">ᱮᱰ-ᱚᱱ ᱰᱟᱩᱱᱞᱚᱰ ᱟᱨ ᱧᱮᱞ ᱢᱮᱲᱟᱣ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ ...</string>
+    <string name="mozac_add_on_install_progress_caption">ᱮᱰ-ᱚᱱ ᱰᱟᱩᱱᱞᱚᱰ ᱟᱨ ᱧᱮᱞ ᱢᱮᱲᱟᱣ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ …</string>
     <!-- Error shown when something unexpected happened while trying to get the add-on list from the server -->
     <string name="mozac_feature_addons_failed_to_query_add_ons">ᱮᱰ-ᱚᱱ ᱠᱚ ᱠᱩᱠᱞᱟᱹᱭ ᱰᱤᱜᱟᱹᱣᱮᱱᱟ!</string>
     <!-- Error shown when unable to find a translation for an add-on field. %1$s is the locale of the user and %2$s is the default language of the add-on -->
