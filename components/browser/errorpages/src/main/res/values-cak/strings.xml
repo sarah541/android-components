@@ -13,7 +13,7 @@
     <string name="mozac_browser_errorpages_security_ssl_title">Xq\'ate\' ri Ütz Okem</string>
     <!-- The error message shown when a website sends back unusual and incorrect credentials for an SSL certificate. -->
     <string name="mozac_browser_errorpages_security_ssl_message"><![CDATA[<ul>
-        Man tikirel ta nik\'ut pe ri ruxaq natojtob\'ej najäq ruma man tikirel ta nijikib\'äx nitz\'et chi e qitzij ri taq tzij.</li>
+        <li>Man tikirel ta nik\'ut pe ri ruxaq natojtob\'ej najäq ruma man tikirel ta nijikib\'äx nitz\'et chi e qitzij ri taq tzij.</li>
         <li>Tab\'ana\' utzil, taya\' rutzijol chi rij re k\'ayewal re\' chi ke ri rajaw ruxaq k\'amaya\'l.</li>
       </ul>]]></string>
 
@@ -241,4 +241,7 @@
     <string name="mozac_browser_errorpages_safe_phishing_uri_title">Ruk\'ayewal q\'olonel ruxaq</string>
     <!-- The %1$s will be replaced by the malicious website URL-->
     <string name="mozac_browser_errorpages_safe_phishing_uri_message"><![CDATA[<p>Re ruxaq k\'amaya\'l pa %1$s xya\' rutzijol chi niq\'eleb\'en, ruma ri\' toq xq\'at ruma ach\'ojin chajinïk.</p>]]></string>
-</resources>
+
+    <!-- The title of the error page for websites that do not support HTTPS when HTTPS-Only is turned on -->
+    <string name="mozac_browser_errorpages_httpsonly_title">Majun jikïl ruxaq</string>
+    </resources>
