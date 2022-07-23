@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:moz="http://mozac.org/tools">
 
     <!-- The button that appears at the bottom of an error page. -->
     <string name="mozac_browser_errorpages_page_refresh">ხელახლა ცდა</string>
@@ -37,6 +37,32 @@
     <string name="mozac_browser_errorpages_security_bad_cert_back">უკან დაბრუნება (სასურველია)</string>
     <!-- The text shown inside the advanced options button used to bypass the invalid SSL certificate. It's only shown if the user has expanded the advanced options. -->
     <string name="mozac_browser_errorpages_security_bad_cert_accept_temporary">საფრთხის გაცნობიერება და გაგრძელება</string>
+
+    <!-- The document title and heading of the error page shown when a website uses HSTS. -->
+    <string name="mozac_browser_errorpages_security_bad_hsts_cert_title">ვებსაიტი ითხოვს დაცულ კავშირს.</string>
+    <!-- The error message shown when a website uses HSTS. -->
+    <string name="mozac_browser_errorpages_security_bad_hsts_cert_message"><![CDATA[
+      <ul>
+         <li>გვერდი, რომლის ნახვაც გსურთ, ვერ გამოჩნდება, ვინაიდან საჭიროებს დაცულ კავშირს.</li>
+         <li>ეს ხარვეზი უმეტესად დაკავშირებულია თავად ვებსაიტთან და თქვენ ვერ მოახერხებთ მის გამოსწორებას.</li>
+         <li>მხოლოდ შგიძლიათ აცნობოთ საიტის მფლობელებს ამ ხარვეზის შესახებ.</li>
+      </ul>
+    ]]></string>
+
+    <!-- The text shown inside the advanced button used to expand the advanced options. It's only shown when a website uses HSTS. -->
+    <string name="mozac_browser_errorpages_security_bad_hsts_cert_advanced">დამატებით…</string>
+
+    <!-- The advanced certificate information shown when a website uses HSTS. The %1$s will be replaced by the website URL and %2$s will be replaced by the app name. It's only shown when a website uses HSTS. -->
+    <string moz:removedIn="104" name="mozac_browser_errorpages_security_bad_hsts_cert_techInfo" tools:ignore="UnusedResources"><![CDATA[
+        <label> <b>%1$s</b> იყენებს უსაფრთხოების დებულებას სახელწოდებით HTTP Strict Transport Security (HSTS), ეს კი ნიშნავს, რომ <b>%2$s</b> მას მხოლოდ უსაფრთხო შეერთებით შეიძლება დაუკავშირდეს. გამონაკლისს ვერ დაამატებთ ამ საიტისთვის.
+    ]]></string>
+
+    <!-- The advanced certificate information shown when a website uses HSTS. The %1$s will be replaced by the website URL and %2$s will be replaced by the app name. It's only shown when a website uses HSTS. -->
+    <string name="mozac_browser_errorpages_security_bad_hsts_cert_techInfo2"><![CDATA[
+        <label> <b>%1$s</b> იყენებს უსაფრთხოების დებულებას სახელწოდებით HTTP Strict Transport Security (HSTS), ეს კი ნიშნავს, რომ <b>%2$s</b> მას მხოლოდ უსაფრთხო შეერთებით შეიძლება დაუკავშირდეს. გამონაკლისს ვერ დაამატებთ ამ საიტისთვის. </label>
+    ]]></string>
+    <!-- The text shown inside the advanced options button used to go back. It's only shown if the user has expanded the advanced options. -->
+    <string name="mozac_browser_errorpages_security_bad_hsts_cert_back">უკან დაბრუნება</string>
 
     <!-- The document title and heading of the error page shown when the user's network connection is interrupted while connecting to a website. -->
     <string name="mozac_browser_errorpages_net_interrupt_title">კავშირი გაწყდა</string>
@@ -116,24 +142,24 @@
 
     <!-- The error message shown when the browser refuses to load a type of file that is considered unsafe. -->
     <string name="mozac_browser_errorpages_unsafe_content_type_message"><![CDATA[<ul>
-        <li>გთხოვთ, დაუკავშირდეთ საიტის მფლობელებს და აცნობოთ, ამ ხარვეზის შესახებ.</li>
+        <li>გთხოვთ, დაუკავშირდეთ საიტის მფლობელებს და აცნობოთ ამ ხარვეზის შესახებ.</li>
       </ul>]]></string>
 
     <!-- The document title and heading of the error page shown when a file cannot be loaded because of a detected data corruption. -->
     <string name="mozac_browser_errorpages_corrupted_content_title">დაზიანებული შიგთავსის შეცდომა</string>
 
     <!-- The error message shown when shown when a file cannot be loaded because of a detected data corruption. -->
-    <string name="mozac_browser_errorpages_corrupted_content_message"><![CDATA[<p>გვერდის ჩვენება, რომლის ნახვასაც ცდილობთ, ვერ ხერხდება, მონაცემთა გადაცემისას აღმოჩენილი შეცდომის გამო</p>
+    <string name="mozac_browser_errorpages_corrupted_content_message"><![CDATA[<p>გვერდის ჩვენება, რომლის ნახვასაც ცდილობთ, ვერ ხერხდება მონაცემთა გადაცემისას აღმოჩენილი შეცდომის გამო</p>
       <ul>
-        <li>გთხოვთ, დაუკავშირდეთ საიტის მფლობელებს და აცნობოთ, ამ ხარვეზის შესახებ.</li>
+        <li>გთხოვთ, დაუკავშირდეთ საიტის მფლობელებს და აცნობოთ ამ ხარვეზის შესახებ.</li>
       </ul>]]></string>
 
     <!-- The document title and heading of an error page. -->
     <string name="mozac_browser_errorpages_content_crashed_title">შიგთავსი დაზიანდა</string>
 
-    <string name="mozac_browser_errorpages_content_crashed_message"><![CDATA[<p>გვერდის ჩვენება, რომლის ნახვასაც ცდილობთ, ვერ ხერხდება, მონაცემთა გადაცემისას აღმოჩენილი შეცდომის გამო</p>
+    <string name="mozac_browser_errorpages_content_crashed_message"><![CDATA[<p>გვერდის ჩვენება, რომლის ნახვასაც ცდილობთ, ვერ ხერხდება მონაცემთა გადაცემისას აღმოჩენილი შეცდომის გამო</p>
       <ul>
-        <li>გთხოვთ, დაუკავშირდეთ საიტის მფლობელებს და აცნობოთ, ამ ხარვეზის შესახებ.</li>
+        <li>გთხოვთ, დაუკავშირდეთ საიტის მფლობელებს და აცნობოთ ამ ხარვეზის შესახებ.</li>
       </ul>]]></string>
 
     <!-- The document title and heading of an error page. -->
@@ -197,7 +223,7 @@
     <string name="mozac_browser_errorpages_file_access_denied_title">ფაილთან წვდომა უარყოფილია</string>
 
     <string name="mozac_browser_errorpages_file_access_denied_message"><![CDATA[<ul>
-        <li>შესაძლოა წაშლილია, გადატანილია ან ფაილზე წვდომის უფლებები შეზღუდულია.</li>
+        <li>შესაძლოა წაშლილია, გადატანილია ან ფაილთან წვდომის უფლებები შეზღუდულია.</li>
       </ul>]]></string>
 
     <!-- The document title and heading of an error page. -->
@@ -242,4 +268,11 @@
     <string name="mozac_browser_errorpages_safe_phishing_uri_title">თაღლითური საიტი</string>
     <!-- The %1$s will be replaced by the malicious website URL-->
     <string name="mozac_browser_errorpages_safe_phishing_uri_message"><![CDATA[<p>ვებგვერდი %1$s მიჩნეულია თაღლითურ საიტად და შეზღუდულია უსაფრთხოების მიზნით.</p>]]></string>
+
+    <!-- The title of the error page for websites that do not support HTTPS when HTTPS-Only is turned on -->
+    <string name="mozac_browser_errorpages_httpsonly_title">უსაფრთხო საიტი მიუწვდომელია</string>
+    <!-- The text of the error page for websites that do not support HTTPS when HTTPS-Only is turned on. %1$s will be replaced with the URL of the website. -->
+    <string name="mozac_browser_errorpages_httpsonly_message"><![CDATA[თქვენ ჩართული გაქვთ მხოლოდ-HTTPS-რეჟიმი მაღალი უსაფრთხოებისთვის, მაგრამ <em>%1$s</em> არაა წარმოდგენილი დაცული HTTPS-ვერსიით.]]></string>
+    <!-- Button on error page for websites that do not support HTTPS when HTTPS-Only is turned on. Clicking the button allows the user to nevertheless load the website using HTTP. -->
+    <string name="mozac_browser_errorpages_httpsonly_button">გადასვლა HTTP-საიტზე</string>
 </resources>

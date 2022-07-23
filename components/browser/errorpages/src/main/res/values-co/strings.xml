@@ -61,7 +61,7 @@
       <p>U navigatore hà troppu aspettatu durante a cunnessione à u situ è hà fermatu d’aspettà una risposta.</p>
       <ul>
         <li>Forse u servitore tratta dumande numerose o hè timpurariamente in panna ? Pruvate torna da quì à pocu.</li>
-        <li>Ùn pudete micca navigà nant’à d’altri siti ? Verificate a cunnessione à a reta di u vostru apparechju./li>
+        <li>Ùn pudete micca navigà nant’à d’altri siti ? Verificate a cunnessione à a reta di u vostru apparechju.</li>
         <li>U vostru apparechju o a vostra reta hè prutettu da un parafocu o un proxy ? Gattivi parametri ponu interferisce cù a navigazione nant’à u web.</li>
         <li>Avete sempre penseri ? Cuntattate u vostru amministratore di a reta o u vostru furnidore d’accessu à internet per ottene un aiutu.</li>
       </ul>]]></string>
@@ -110,7 +110,7 @@
 
     <!-- The error message shown when the browser prevents loading a website on a restricted port. -->
     <string name="mozac_browser_errorpages_port_blocked_message"><![CDATA[
-      <p>L’indirizzu richiesta indicheghja un portu (i.e. : <q>mozilla.org:80</q> per u portu 80 nant’à mozilla.org) chì hè di solitu impiegatu per d’<em>altri</em> scopi chì a navigazione nant’à u Web. U navigatore hà abbandunatu a richiesta per a vostra prutezzione è a vostra sicurità.</p>
+      <p>L’indirizzu richiesta indicheghja un portu (i.e. : <q>mozilla.org:80</q> per u portu 80 nant’à mozilla.org) chì hè di solitu impiegatu per d’<em>altri</em> scopi chè a navigazione nant’à u Web. U navigatore hà abbandunatu a richiesta per a vostra prutezzione è a vostra sicurità.</p>
     ]]></string>
 
     <!-- The document title and heading of the error page shown when the Internet connection is disrupted while loading a website. -->
@@ -138,7 +138,7 @@
     <string name="mozac_browser_errorpages_corrupted_content_title">Sbagliu di cuntenutu alteratu</string>
     <!-- The error message shown when shown when a file cannot be loaded because of a detected data corruption. -->
     <string name="mozac_browser_errorpages_corrupted_content_message"><![CDATA[
-      <p>A pagina chì vò circate à fighjà ùn pò micca esse affissata, perchè un sbagliu in a trasmissione di dati hè statu abbentatu.</p>
+      <p>A pagina chì vò circate à fighjà ùn pò micca esse affissata, perchè un sbagliu in a trasmissione di dati hè statu scupertu.</p>
       <ul>
         <li>Ci vole à cuntattà i prupietarii di u situ web per infurmalli di stu penseru.</li>
       </ul>
@@ -147,7 +147,7 @@
     <!-- The document title and heading of an error page. -->
     <string name="mozac_browser_errorpages_content_crashed_title">U cuntenutu s’hè lampatu</string>
     <string name="mozac_browser_errorpages_content_crashed_message"><![CDATA[
-      <p>A pagina chì vò circate à fighjà ùn pò micca esse affissata, perchè un sbagliu in a trasmissione di dati hè statu abbentatu.</p>
+      <p>A pagina chì vò circate à fighjà ùn pò micca esse affissata, perchè un sbagliu in a trasmissione di dati hè statu scupertu.</p>
       <ul>
         <li>Ci vole à cuntattà i prupietarii di u situ web per infurmalli di stu penseru.</li>
       </ul>
@@ -194,7 +194,7 @@
     <string name="mozac_browser_errorpages_malformed_uri_message_alternative"><![CDATA[
       <ul>
         <li>A sintassa di l’indirizzi hè di solitu <strong>http://www.esempiu.com/</strong></li>
-        <li>Assicuratevvi d’impiegà barre sbieche (i.e. <strong>/</strong>).</li>
+        <li>Assicuratevi d’impiegà barre sbieche (i.e. <strong>/</strong>).</li>
       </ul>
     ]]></string>
 
@@ -272,4 +272,11 @@
     <string name="mozac_browser_errorpages_safe_phishing_uri_title">Prublema di situ ingannatore</string>
     <!-- The %1$s will be replaced by the malicious website URL-->
     <string name="mozac_browser_errorpages_safe_phishing_uri_message"><![CDATA[<p>U situ web à l’indirizzu %1$s hè statu signalatu cum’è essendu ingannatore è hè statu bluccatu secondu à e vostre preferenze di sicurità.</p>]]></string>
+
+    <!-- The title of the error page for websites that do not support HTTPS when HTTPS-Only is turned on -->
+    <string name="mozac_browser_errorpages_httpsonly_title">U situ sicurizatu ùn hè micca dispunibule</string>
+    <!-- The text of the error page for websites that do not support HTTPS when HTTPS-Only is turned on. %1$s will be replaced with the URL of the website. -->
+    <string name="mozac_browser_errorpages_httpsonly_message"><![CDATA[Avete attivatu u modu « HTTPS solu » per una sicurità rinfurzata, ma ùn ci hè alcuna versione HTTPS di <em>%1$s</em>.]]></string>
+    <!-- Button on error page for websites that do not support HTTPS when HTTPS-Only is turned on. Clicking the button allows the user to nevertheless load the website using HTTP. -->
+    <string name="mozac_browser_errorpages_httpsonly_button">Cuntinuà nant’à u situ HTTP</string>
 </resources>

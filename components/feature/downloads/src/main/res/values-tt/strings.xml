@@ -40,8 +40,15 @@
 
     <!-- Content description for close button -->
     <string name="mozac_feature_downloads_button_close">Ябу</string>
+    <!-- Title for the third party download app chooser dialog -->
+    <string name="mozac_feature_downloads_third_party_app_chooser_dialog_title">Түбәндәгене кулланып гамәлне тәмамлау</string>
     <!-- Message that appears when trying to download with an external app fails. %1$s will be replaced with the name the external app. -->--&gt;
     <string name="mozac_feature_downloads_unable_to_open_third_party_app">%1$s кушымтасын ачу мөмкин түгел</string>
     <!-- Text for the info dialog when write to storage permissions have been denied but user tries to download a file. -->
     <string name="mozac_feature_downloads_write_external_storage_permissions_needed_message">Файлларны йөкләп алу өчен файллардан һәм медиадан файдалану рөхсәте кирәк. Android көйләүләренә кереп, &quot;рөхсәтләр&quot; дигән битне ачып, &quot;рөхсәт итү&quot; дигәнгә басыгыз.</string>
+
+    <!-- Alert dialog confirmation before cancelling downloads, this is the positive action. -->
+    <string name="mozac_feature_downloads_cancel_active_downloads_accept">Йөкләүдән баш тарту</string>
+    <!-- Alert dialog confirmation before cancelling downloads, this is the negative action. Leaves user in Private browsing -->
+    <string name="mozac_feature_downloads_cancel_active_private_downloads_deny">Хосусый гизү режимында калу</string>
 </resources>

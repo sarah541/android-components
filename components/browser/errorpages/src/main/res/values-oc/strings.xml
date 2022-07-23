@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- The default document title of an error page (i.e., the contents of the `<title>` tag). -->
-    <string name="mozac_browser_errorpages_page_title">Problème en cargar la pagina</string>
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:moz="http://mozac.org/tools">
 
     <!-- The button that appears at the bottom of an error page. -->
     <string name="mozac_browser_errorpages_page_refresh">Tornar ensajar</string>
-
-    <!-- The button that appears at the bottom of an error page. -->
-    <string name="mozac_browser_errorpages_page_go_back">Tornar</string>
 
     <!-- The document title and heading of an error page shown when a website cannot be loaded for an unknown reason. -->
     <string name="mozac_browser_errorpages_generic_title">Impossible de completar la requèsta</string>
@@ -43,6 +38,32 @@
     <string name="mozac_browser_errorpages_security_bad_cert_back">Tornar (recomandat)</string>
     <!-- The text shown inside the advanced options button used to bypass the invalid SSL certificate. It's only shown if the user has expanded the advanced options. -->
     <string name="mozac_browser_errorpages_security_bad_cert_accept_temporary">Acceptar lo risc e contunhar</string>
+
+    <!-- The document title and heading of the error page shown when a website uses HSTS. -->
+    <string name="mozac_browser_errorpages_security_bad_hsts_cert_title">Aqueste site web requerís una connexion segura.</string>
+
+    <!-- The error message shown when a website uses HSTS. -->
+    <string name="mozac_browser_errorpages_security_bad_hsts_cert_message"><![CDATA[
+      <ul>
+         <li>La pagina qu’ensajatz de visualizar se pòt pas afichar perque aqueste site requerís una connexion segura.</li>
+         <li>Lo problèma ven probablament del site web e i a pas res que poscatz far per lo resòlver;</li>
+         <li>Podètz senhalar lo problèma als administrators del site web.</li>
+      </ul>
+    ]]></string>
+
+    <!-- The text shown inside the advanced button used to expand the advanced options. It's only shown when a website uses HSTS. -->
+    <string name="mozac_browser_errorpages_security_bad_hsts_cert_advanced">Avançat…</string>
+
+    <!-- The advanced certificate information shown when a website uses HSTS. The %1$s will be replaced by the website URL and %2$s will be replaced by the app name. It's only shown when a website uses HSTS. -->
+    <string moz:removedIn="104" name="mozac_browser_errorpages_security_bad_hsts_cert_techInfo" tools:ignore="UnusedResources"><![CDATA[
+<label> <b>%1$s</b> a una estrategia de seguretat HTTP Strict Transport Security (HSTS), valent a dire que <b>%2$s</b> pòt sonque s’i connectar amb una connexion securizada. Podètz pas apondre d’excepcion per consultar aqueste site.
+]]></string>
+    <!-- The advanced certificate information shown when a website uses HSTS. The %1$s will be replaced by the website URL and %2$s will be replaced by the app name. It's only shown when a website uses HSTS. -->
+    <string name="mozac_browser_errorpages_security_bad_hsts_cert_techInfo2"><![CDATA[
+<label> <b>%1$s</b> a una estrategia de seguretat HTTP Strict Transport Security (HSTS), valent a dire que <b>%2$s</b> pòt sonque s’i connectar amb una connexion securizada. Podètz pas apondre d’excepcion per consultar aqueste site. </label>
+]]></string>
+    <!-- The text shown inside the advanced options button used to go back. It's only shown if the user has expanded the advanced options. -->
+    <string name="mozac_browser_errorpages_security_bad_hsts_cert_back">Tornar</string>
 
     <!-- The document title and heading of the error page shown when the user's network connection is interrupted while connecting to a website. -->
     <string name="mozac_browser_errorpages_net_interrupt_title">La connexion es estada interrompuda</string>
@@ -245,4 +266,11 @@
     <string name="mozac_browser_errorpages_safe_phishing_uri_title">Problèma de site enganaire</string>
     <!-- The %1$s will be replaced by the malicious website URL-->
     <string name="mozac_browser_errorpages_safe_phishing_uri_message"><![CDATA[<p>Lo site a l’adreça %1$s es estat senhalat coma un site enganaire e es estat blocat segon vòstras preferéncias de seguretat.</p>]]></string>
+
+    <!-- The title of the error page for websites that do not support HTTPS when HTTPS-Only is turned on -->
+    <string name="mozac_browser_errorpages_httpsonly_title">Site securizat non disponible</string>
+    <!-- The text of the error page for websites that do not support HTTPS when HTTPS-Only is turned on. %1$s will be replaced with the URL of the website. -->
+    <string name="mozac_browser_errorpages_httpsonly_message"><![CDATA[Avètz activat lo mòde HTTPS solament e cap de version HTTPS de <em>%1$s</em> es pas disponibla.]]></string>
+    <!-- Button on error page for websites that do not support HTTPS when HTTPS-Only is turned on. Clicking the button allows the user to nevertheless load the website using HTTP. -->
+    <string name="mozac_browser_errorpages_httpsonly_button">Contunhar cap al site HTTP</string>
 </resources>
